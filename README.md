@@ -19,25 +19,22 @@ Automated workflow for blind and targeted protein–ligand docking of large prot
 
 
 ## Workflow
+
+```text
 protein.pdb + ligand.sdf
-            │
-            ▼
-   Receptor/Ligand Preparation
-            │
-            ▼
- Grid Generation (Blind + fpocket)
-            │
-            ▼
-    Multi-grid AutoDock Vina
-            │
-            ▼
-      Pose Ranking & Filtering
-            │
-            ▼
- PDB / SDF / MOL2 / Complex Export
-            │
-            ▼
-    Downstream MD / CHARMM-GUI
+        ↓
+Receptor / Ligand Preparation
+        ↓
+Blind / Targeted Grid Generation (+ optional fpocket)
+        ↓
+Multi-grid AutoDock Vina Docking
+        ↓
+Pose Ranking and Filtering
+        ↓
+PDB / SDF / MOL2 / Complex Export
+        ↓
+Downstream MD / CHARMM-GUI
+```
 
 
 
